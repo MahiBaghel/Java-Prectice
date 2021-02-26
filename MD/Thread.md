@@ -23,6 +23,11 @@ Default priority range is **1-10**
 
 ### Synchronized
 
+1. Synchronizer block used to solve data in-consistency problem
+2. Synchronizer is only method label and block
+3. If a class having two sync method and one normal method than accessing sync method is not possible even if diffrent thread try to access diff method, but accessing normal method can at the same time.
+4. if you make a static method is sync than this class is complety blocked to access, becoz this time thread need class lavel lock
+
 ### Inter Thread Communication
 
 ### DeadLock
