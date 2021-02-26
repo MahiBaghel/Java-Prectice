@@ -1,17 +1,17 @@
 # Thread local
 
-1. Can we used define local varibale for a thread
-2. We can access thread local varibale in thread anywhere
-3. Intorduced in Java 1.2 version and updated in 1.5 version
-4. Threadlocal can be assosiated with thread scope
+1. Can we used define local variable for a thread
+2. We can access thread local variable in thread anywhere
+3. Introduced in Java 1.2 version and updated in 1.5 version
+4. Threadlocal can be associated with thread scope
 
 # Methods
 
     ## Object get()
-    Return the value of thread local vriable for currect thread
+    Return the value of thread local variable for current thread
 
     ## Object initValue()
-    Return init vlalue of thread local vriable for currect thread default value is null to customise init value we have to override this method
+    Return init value of thread local variable for current thread default value is null to customize init value we have to override this method
 
     ## void set(Object newValue)
     To set a new value
