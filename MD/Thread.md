@@ -1,5 +1,18 @@
 # Thread
 
+Java MultiThread is implemented over two modal
+
+1. Green Thread modal
+2. Native Os modal
+
+#### Green Thread modal :
+
+Thread completely managed by JVM, without taking underlying OS support(**SUN solaris**)
+
+#### Native Os modal :
+
+Thread completely managed by OS, with taking underlying OS support
+
 ### Ways to create thread
 
 1.Extending Thread class
@@ -30,23 +43,28 @@ Default priority range is **1-10**
 
 ### Inter Thread Communication
 
-Two thread can comm with each other with following method,these all method present in object call
-**why** : because thread can call wait, notify and notifyAll method on any object thats why all method in object call
+1. Two thread can comm with each other with following method,these all method present in object call
+2. wait, notify and notifyAll method on any object thats why all method in object class
+3. All these method method we can only call inside sync area(**IllegalMonitorStateException**)
+4. Only in these three method thread releases the lock
 
 #### wait()
 
 1. Thread which is expecting updation is responsible to call wait method
 2. after calling wait method thread entered into waiting state
+3. Thread can only call wait method on object when it is owner of that object, if did than there will be and exception(**IllegalMonitorStateException**)
 
-#### notify();
+#### notify()
 
 1. Thread who will responsible for updation value has to call notify method
 2. after calling waiting thread will get that notification and continue its exe with those updated items
 
 #### notifyAll()
 
-2.
-
-### DeadLock
+1. used this to notify all thread which are in waiting thread, in notify method only one thread will got notification not all thread other will still be in waiting state
 
 ### Daemon Thread
+
+Thread running in background called Daemon thread
+**Example**
+Garbage collector
