@@ -1,10 +1,17 @@
 package Problems;
 //Java Program to print numbers alternatively using 2 threads-
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 public class AlterNumByTwoThread {
     public static void main(String[] args) {
         Message message1 = new Message("Ping");
         Message message2 = new Message("Pong");
+        ExecutorService service = Executors.newFixedThreadPool(2);
+        service.submit(message1);
+        service.submit(message2);
+        service.shutdown();
     }
 
 }
