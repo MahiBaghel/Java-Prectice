@@ -1,5 +1,3 @@
-package Thread;
-
 public class DemoSynchronization {
     public static void main(String[] args) {
         Display d = new Display();

@@ -1,4 +1,3 @@
-package Thread;
 
 public class DemoThreadMethod {
     public static void main(String[] args) throws InterruptedException {

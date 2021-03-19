@@ -1,5 +1,3 @@
-package Thread;
-
 import java.util.concurrent.CountDownLatch;
 
 public class DemoCountDownLatch {

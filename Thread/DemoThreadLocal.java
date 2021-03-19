@@ -1,4 +1,3 @@
-package Thread;
 
 public class DemoThreadLocal {
     public static void main(String[] args) {

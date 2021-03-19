@@ -1,5 +1,3 @@
-package Thread;
-
 public class DemoInhThreadLocal {
     public static void main(String[] args) {
         Parent p = new Parent();

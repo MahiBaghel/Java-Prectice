@@ -1,4 +1,3 @@
-package Thread;
 
 public class DemoThreadGroup {
     public static void main(String[] args) {

@@ -1,5 +1,3 @@
-package Thread;
-
 import java.util.concurrent.locks.ReentrantLock;
 
 //why we requried Concurrent

@@ -1,4 +1,3 @@
-package Thread;
 
 public class DemoThreadComm {
     public static void main(String[] args) throws InterruptedException {
